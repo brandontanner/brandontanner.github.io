@@ -184,8 +184,14 @@ body {
   border-radius: 8px;
 }
 
-#about-card {
+#about-card1 {
   background-image: url("./images/aboutpic.JPG");
+  background-size: cover;
+  background-position: center center;
+}
+
+#about-card2 {
+  background-image: url("./images/koreahike.JPG");
   background-size: cover;
   background-position: center center;
 }
@@ -330,6 +336,32 @@ body {
     font-size: 60px;
   }
 }
+
+/* Contact */
+
+#contact-title {
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+
+.about-content ul {
+  list-style-type: none;
+  text-align: left;
+  margin: auto;
+}
+
+.about-content ul li {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.about-content ul li span {
+  display:inline-block;
+  margin-left: 1.5rem;
+}
+
 
 /* Projects Page */
 
