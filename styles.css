@@ -195,7 +195,7 @@ body {
 }
 
 #about-card {
-  background-image: url("./images/aboutpic.JPG");
+  background-image: url("./images/aboutpic.jpg");
   background-size: cover;
   background-position: center center;
 }
