@@ -39,11 +39,20 @@ body {
 }
 
 .width-restrictor {
+  max-width: 800px;
+  max-height: 450px;
   max-width: 512px;
   max-height: 288px;
   margin: auto;
   padding-top: 0px;
   margin-top: 0px;
+}
+
+@media screen and (max-width: 1300px) {
+  .width-restrictor {
+    max-width: 512px;
+    max-height: 288px;
+  }
 }
 
 .iframe-container {
@@ -102,8 +111,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   padding: 2rem 0;
+
 }
 
 .about-container {
@@ -185,7 +195,7 @@ body {
 }
 
 #about-card {
-  background-image: url("./images/aboutpic.jpg");
+  background-image: url("./images/aboutpic.JPG");
   background-size: cover;
   background-position: center center;
 }
@@ -198,6 +208,7 @@ body {
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
+  margin: auto;
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
