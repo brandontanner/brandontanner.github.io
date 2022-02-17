@@ -1,8 +1,96 @@
-<html>
-    <h1>Brandon's Portfolio</h1>
-    <img src="./BioPic.jpg" />
-    
-    <a href="https://brandontanner.github.io/PacMen-Exercise/" target="_blank" rel="noopener" rel="noreferrer">PacMen Exercise</a>
-    <a href="https://brandontanner.github.io/Eye-Exercise/" target="_blank" rel="noopener" rel="noreferrer">Eye Exercise</a>
-    <a href="https://brandontanner.github.io/Real-Time-Bus-Tracker/" target="_blank" rel="noopener" rel="noreferrer">Real Time Bus Tracker</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brandon's Portfolio</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav id="navbar-example2" class="navbar navbar-light fixed-top bg-light px-3">
+        <a class="navbar-brand" href="#">
+            <img src="./images/BioPic.jpg" class="rounded-circle" id="profile-picture"/>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading4">Contact</a>
+          </li>
+        </ul>
+    </nav>
+
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <!-- Jumbotron and Video -->
+        <div id="scrollspyHeading1" class="section"></div>
+            <div class="p-5 mb-4 vh-100 bg-light home-jumbotron" id="parallax">
+                <div class="container-fluid py-5 text-light">
+                    <h1 class="display-5 fw-bold">Brandon Tanner</h1>
+                    <p class="col-md-8 fs-4 subheading">Full Stack Developer</p>
+                    <div class="d-flex justify-content-center  width-restrictor">
+                        <div class="iframe-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Mffxz2PNrLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- About Me -->
+        <div id="scrollspyHeading2" class="section">
+            <div class="about" id="aboutme">
+                <div class="about-container">
+                    <div class="about-img-card" id="about-card"></div>
+                  <div class="about-content">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nihil asperiores. Omnis quidem fuga aspernatur libero eum itaque rem esse perspiciatis illo, unde temporibus distinctio dolor earum error fugiat. Aliquid!</p>
+                    <button class="about-btn"><a href="#scrollspyHeading4">Contact Me</a></button>
+                  </div>
+                </div>
+              </div>
+        </div>  
+        <div class="page-break" id="page-break1"></div>
+
+    <!-- Projects -->
+        <div id="scrollspyHeading3" class="section">
+            <div class="home-project" id="home">
+                <div class="home-project-container">
+                    <h1 class="home-project-heading"><span>My Projects</span></h1>
+                    <button class="main-btn"><a href="projects.html">Explore</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="page-break" id="page-break2"></div> 
+
+    <!-- Contact -->
+        <div id="scrollspyHeading4" class="section">
+            <h4>Contact</h4>
+            <p>...</p>
+        </div>  
+        <div class="page-break" id="page-break3"></div>
+
+      </div>
+
+    <!-- Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="portfolio.js"></script>
+  </body>
 </html>
+

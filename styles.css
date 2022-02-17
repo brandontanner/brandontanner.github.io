@@ -1,0 +1,487 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+/* Navbar */
+
+.navbar {
+  margin-bottom: 0;
+}
+
+#profile-picture {
+  max-height: 40px;
+  max-width: fit-content;
+}
+
+/* Sections */
+
+.section {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+/* Home */
+
+.home-jumbotron {
+  background-image: url("./images/seattle.JPG") ;
+  height: 100vh;
+  background-size: cover;
+  background-position: left center;
+}
+
+.width-restrictor {
+  max-width: 900px;
+  max-height: 506px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Page Breaks */
+
+.page-break {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+
+#page-break1 {
+  background-image: url("./images/forestpano.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#page-break2 {
+  background-image: url("./images/mountainlake.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#page-break3 {
+  background-image: url("./images/forestlakesunset.JPG");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+/* About Section */
+.about {
+  background-color: #fff;
+  padding: 10rem 0;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  height: 80vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+  margin-top: -100px;
+}
+
+.about-content {
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 8px;
+  width: 100%;
+  height: 80vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-content h1 {
+  font-size: 4rem;
+  background-color: #92FE9D;
+  background-image: #00C9FF;  /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.about-content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff
+}
+
+.fa-layer-group,
+.fa-users {
+  font-size: 14rem;
+}
+
+.about-img-card {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+}
+
+#about-card {
+  background-image: url("./images/aboutpic.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.about-btn {
+  font-size: 1.8rem;
+  background: #093028;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.about-btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #237A57;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.about-btn:hover {
+  color: #fff;
+}
+
+.about-btn:hover:after {
+  width: 100%;
+}
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 1100px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+    margin-top: -100px;
+  }
+
+  .about-img-card {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    height: 80vh;
+  }
+
+  .about-content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .about-content h1 {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  .about-content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .about-content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .about-btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+}
+
+/* Home-Project Section */
+.home-project {
+  padding: 100px 0;
+}
+
+.home-project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80vh;
+  text-align: center;
+}
+
+.home-project-heading {
+  font-size: 8rem;
+  margin-bottom: 24px;
+}
+
+.home-project-heading  span {
+  background: #159957;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+}
+
+.main-btn {
+  font-size: 1.8rem;
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.main-btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #155799;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main-btn:hover {
+  color: #fff;
+}
+
+.main-btn:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    font-size: 60px;
+  }
+
+  .hero-description {
+    font-size: 40px;
+  }
+}
+
+/* Projects Page */
+
+.projects-jumbotron {
+  background: #159957;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* projects Section */
+.projects {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.projects-card {
+  margin: 1rem;
+  height: 500px;
+  width: 600px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000428, #004e92);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 0.3s ease-in;
+}
+
+.projects-card h2 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.projects-card p {
+  margin: 2rem;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+.projects-btn {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.projects-card:nth-child(3) {
+  background: #093028;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-card:nth-child(5) {
+  background: #159957;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+.projects-card button {
+  color: #00853E;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+}
+
+.projects-card button:hover {
+  cursor: pointer;
+  background-color:#00853E;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.projects-card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.projects-image-btn {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+#image-btn1 {
+  background-image: url("./images/pacman.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#image-btn2 {
+  background-image: url("./images/eyepicture.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#image-btn3 {
+  background-image: url("./images/bus.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 1300px) {
+  .projects-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-card {
+    height: 500px;
+    width: 425px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projects-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
